@@ -1,0 +1,1130 @@
+[
+  {
+    "NOMBRE": "Centro Cultural y Biblioteca JMSD",
+    "DIRECCION": "CL 170 No. 67-51",
+    "TIPO": "Biblioteca",
+    "CUPO_BICI": 60,
+    "X": -74.062068964,
+    "Y": 4.756286142
+  },
+  {
+    "NOMBRE": "Centro Comercial San Rafael",
+    "DIRECCION": "CL 134 No. 55-30",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 50,
+    "X": -74.062480169,
+    "Y": 4.723451867
+  },
+  {
+    "NOMBRE": "Centro Comercial Santa Fe",
+    "DIRECCION": "AK 45 No. 183-49",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 600,
+    "X": -74.046398684,
+    "Y": 4.762294869
+  },
+  {
+    "NOMBRE": "Centro Comercial Show Place",
+    "DIRECCION": "AC 147 No. 7-70",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 22,
+    "X": -74.026658886,
+    "Y": 4.723093461
+  },
+  {
+    "NOMBRE": "Centro Comercial Santa Barbara Drive",
+    "DIRECCION": "AK 19 No.122-49",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 32,
+    "X": -74.0493071,
+    "Y": 4.702884
+  },
+  {
+    "NOMBRE": "Centro Comercial Santa Ana",
+    "DIRECCION": "AK  9 No. 110-50",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 100,
+    "X": -74.037042669,
+    "Y": 4.690919055
+  },
+  {
+    "NOMBRE": "Centro Comercial Metro 127",
+    "DIRECCION": "CL 127 No.15A-03",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 22,
+    "X": -74.043545909,
+    "Y": 4.703653601
+  },
+  {
+    "NOMBRE": "Centro Comercial Fiesta Fontibon",
+    "DIRECCION": "KR 100 No. 18-59",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 22,
+    "X": -74.144434326,
+    "Y": 4.674803748
+  },
+  {
+    "NOMBRE": "Centro Comercial Iserra 100",
+    "DIRECCION": "TV 55 No. 98A-66",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 197,
+    "X": -74.064290636,
+    "Y": 4.688090497
+  },
+  {
+    "NOMBRE": "Centro Comercial Trebolis",
+    "DIRECCION": "KR 95A No. 49C-48 Sur",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 23,
+    "X": -74.18363286,
+    "Y": 4.63907604
+  },
+  {
+    "NOMBRE": "Centro Comercial  Outlet Factory",
+    "DIRECCION": "AV Americas No. 62-84",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 24,
+    "X": -74.117431,
+    "Y": 4.631126
+  },
+  {
+    "NOMBRE": "Centro Comercial 20 de Julio",
+    "DIRECCION": "CL 25B Sur No. 5-87",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 14,
+    "X": -74.093218,
+    "Y": 4.569286
+  },
+  {
+    "NOMBRE": "Alcala",
+    "DIRECCION": "AK 45  x CL 136",
+    "TIPO": "Punto de Encuentro",
+    "CUPO_BICI": 36,
+    "X": -74.050556713,
+    "Y": 4.721401314
+  },
+  {
+    "NOMBRE": "Tintal",
+    "DIRECCION": "AK 86 x CL 58 Sur",
+    "TIPO": "Punto de Encuentro",
+    "CUPO_BICI": 36,
+    "X": -74.160553746,
+    "Y": 4.638957933
+  },
+  {
+    "NOMBRE": "Mundo Aventura",
+    "DIRECCION": "AC 6 x KR 71B",
+    "TIPO": "Punto de Encuentro",
+    "CUPO_BICI": 36,
+    "X": -74.134386208,
+    "Y": 4.629507454
+  },
+  {
+    "NOMBRE": "Aguas",
+    "DIRECCION": "KR 2A x CL 19",
+    "TIPO": "Punto de Encuentro",
+    "CUPO_BICI": 94,
+    "X": -74.068061755,
+    "Y": 4.602199737
+  },
+  {
+    "NOMBRE": "Estacion Portal Suba",
+    "DIRECCION": "AC 145 x AK 104",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 324,
+    "X": -74.095457128,
+    "Y": 4.747039427
+  },
+  {
+    "NOMBRE": "Estacion Portal Americas",
+    "DIRECCION": "AC 43 Sur  x AK 86",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 785,
+    "X": -74.175047092,
+    "Y": 4.630721764
+  },
+  {
+    "NOMBRE": "Estacion Banderas",
+    "DIRECCION": "AC 6  x KR 78C",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 101,
+    "X": -74.146104754,
+    "Y": 4.630964315
+  },
+  {
+    "NOMBRE": "Estacion Portal del Sur",
+    "DIRECCION": "AC 57R Sur x  TV 73I",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 220,
+    "X": -74.17020455,
+    "Y": 4.598052513
+  },
+  {
+    "NOMBRE": "Estacion General Santander",
+    "DIRECCION": "AC 45A Sur x KR 50",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 48,
+    "X": -74.128977729,
+    "Y": 4.593513146
+  },
+  {
+    "NOMBRE": "Estacion Ricaurte",
+    "DIRECCION": "AK 30 x AC 13",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 165,
+    "X": -74.092046152,
+    "Y": 4.613753048
+  },
+  {
+    "NOMBRE": "Estacion Bicentenario",
+    "DIRECCION": "KR 10 x CL 5",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 116,
+    "X": -74.080891806,
+    "Y": 4.594117423
+  },
+  {
+    "NOMBRE": "Estacion Portal El Dorado",
+    "DIRECCION": "AC 26 x TV 95A",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 332,
+    "X": -74.121864301,
+    "Y": 4.68227121
+  },
+  {
+    "NOMBRE": "Estacion AV. Rojas",
+    "DIRECCION": "AC 26 x AK 70",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 104,
+    "X": -74.109193438,
+    "Y": 4.661487939
+  },
+  {
+    "NOMBRE": "Estacion Portal 20 de Julio",
+    "DIRECCION": "KR 5A x CL 32 Sur",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 216,
+    "X": -74.097402857,
+    "Y": 4.56435241
+  },
+  {
+    "NOMBRE": "Estacion Marsella",
+    "DIRECCION": "AC 6 x KR 69 F",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 32,
+    "X": -74.130359802,
+    "Y": 4.629827983
+  },
+  {
+    "NOMBRE": "Estacion Pradera",
+    "DIRECCION": "AC 9 x KR  64A",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 32,
+    "X": -74.11862966,
+    "Y": 4.628531329
+  },
+  {
+    "NOMBRE": "Estacion San Mateo",
+    "DIRECCION": "San Mateo-Soacha-",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 650,
+    "X": -74.205972196,
+    "Y": 4.585755022
+  },
+  {
+    "NOMBRE": "Estacion Quinta Paredes",
+    "DIRECCION": "AC 26 x KR 45",
+    "TIPO": "CicloEstacion",
+    "CUPO_BICI": 48,
+    "X": -74.092840613,
+    "Y": 4.637080538
+  },
+  {
+    "NOMBRE": "Centro Comercial Unicentro",
+    "DIRECCION": "AK 15 No. 124-30",
+    "TIPO": "Centro Comercial",
+    "CUPO_BICI": 50,
+    "X": -74.042756869,
+    "Y": 4.700959022
+  },
+  {
+    "NOMBRE": "Buro 26",
+    "DIRECCION": "AC 26 No. 102-20",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 41,
+    "X": -74.129793,
+    "Y": 4.689444
+  },
+  {
+    "NOMBRE": "Cargo Port",
+    "DIRECCION": "AC 26 No.106 - 39",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 83,
+    "X": -74.13579,
+    "Y": 4.692501
+  },
+  {
+    "NOMBRE": "Clinica Mederi Barrios Unidos",
+    "DIRECCION": "KR 52 No. 65A-07",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 50,
+    "X": -74.079635739,
+    "Y": 4.663826779
+  },
+  {
+    "NOMBRE": "Castellana",
+    "DIRECCION": "KR 45A No. 94-66",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.0587158,
+    "Y": 4.6831482
+  },
+  {
+    "NOMBRE": "Centro de Dise�o la Floresta",
+    "DIRECCION": "CL 94A No. 67A-74",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.073441,
+    "Y": 4.687276
+  },
+  {
+    "NOMBRE": "Hotel  Best Western",
+    "DIRECCION": "CL 93 13-71",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 6,
+    "X": -74.050733,
+    "Y": 4.676082
+  },
+  {
+    "NOMBRE": "Emaus",
+    "DIRECCION": "KR 5 No. 70A -74",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 6,
+    "X": -74.054378,
+    "Y": 4.653001
+  },
+  {
+    "NOMBRE": "Parque de la 93",
+    "DIRECCION": "KR 12 No.93-43",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 6,
+    "X": -74.048837,
+    "Y": 4.675633
+  },
+  {
+    "NOMBRE": "Calle 84",
+    "DIRECCION": "KR 11 No 84 -50",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.051728,
+    "Y": 4.667328
+  },
+  {
+    "NOMBRE": "Torre Zimma",
+    "DIRECCION": "KR 15 No. 88 - 64",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 60,
+    "X": -74.05305446,
+    "Y": 4.674332292
+  },
+  {
+    "NOMBRE": "Country Park",
+    "DIRECCION": "KR 18 No. 84 - 11",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.0574269,
+    "Y": 4.6698436
+  },
+  {
+    "NOMBRE": "Body  Tech Cabrera",
+    "DIRECCION": "CL 85 No.7-65",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 15,
+    "X": -74.047072,
+    "Y": 4.665284
+  },
+  {
+    "NOMBRE": "Urban Plaza",
+    "DIRECCION": "CL 90 No. 11-13",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 50,
+    "X": -74.049011671,
+    "Y": 4.672215871
+  },
+  {
+    "NOMBRE": "KR 8 No. 64-30",
+    "DIRECCION": "KR 8 No.64-30 CL 64",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.060418,
+    "Y": 4.649249
+  },
+  {
+    "NOMBRE": "CL 82 No.10-69",
+    "DIRECCION": "CL 82 No.10-69",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 18,
+    "X": -74.052791,
+    "Y": 4.665508
+  },
+  {
+    "NOMBRE": "KR 12 No. 84-42",
+    "DIRECCION": "KR 12 No.84-42",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.0524786,
+    "Y": 4.668321
+  },
+  {
+    "NOMBRE": "U. Piloto",
+    "DIRECCION": "Cl 46 No. 9-  20",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 24,
+    "X": -74.06580627,
+    "Y": 4.633181753
+  },
+  {
+    "NOMBRE": "U. Santo Tomas. Ed Angelico",
+    "DIRECCION": "Cl 73 No. 8 - 73",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.055967927,
+    "Y": 4.656779851
+  },
+  {
+    "NOMBRE": "AK 45 No. 95-08",
+    "DIRECCION": "AK 45 No. 95-08",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.057361675,
+    "Y": 4.683458282
+  },
+  {
+    "NOMBRE": "Porto 100",
+    "DIRECCION": "AK 45 No 97-50",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.057024,
+    "Y": 4.6855
+  },
+  {
+    "NOMBRE": "Externado 93",
+    "DIRECCION": "KR 15 No. 93-07/09",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 6,
+    "X": -74.051956622,
+    "Y": 4.676892551
+  },
+  {
+    "NOMBRE": "Surtifruver Chapinero",
+    "DIRECCION": "KR 7 No 58-18",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.0616881,
+    "Y": 4.643608
+  },
+  {
+    "NOMBRE": "Link 7-60",
+    "DIRECCION": "CL 59A Bis No. 5-53",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.061064,
+    "Y": 4.644907
+  },
+  {
+    "NOMBRE": "U. Santo Tomas. CL 51",
+    "DIRECCION": "CL 51 No. 7-43",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 29,
+    "X": -74.063821435,
+    "Y": 4.637820164
+  },
+  {
+    "NOMBRE": "U. Catolica de Colombia",
+    "DIRECCION": "Cl 47 AK 13",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 44,
+    "X": -74.065670831,
+    "Y": 4.634186714
+  },
+  {
+    "NOMBRE": "U. Manuela Beltran",
+    "DIRECCION": "AV Circunvalar No 60-00",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.054299,
+    "Y": 4.642882
+  },
+  {
+    "NOMBRE": "Hotel Atton",
+    "DIRECCION": "CL 93 No. 12-41",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 16,
+    "X": -74.049482448,
+    "Y": 4.675171466
+  },
+  {
+    "NOMBRE": "Plaza 39",
+    "DIRECCION": "DG 40A No. 7-84",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 18,
+    "X": -74.066177,
+    "Y": 4.626375
+  },
+  {
+    "NOMBRE": "Capital Tower",
+    "DIRECCION": "AC 100 No. 7-33",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 80,
+    "X": -74.038948,
+    "Y": 4.680051
+  },
+  {
+    "NOMBRE": "Universa",
+    "DIRECCION": "CL 100 No. 7 A- 81",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.039531,
+    "Y": 4.680343
+  },
+  {
+    "NOMBRE": "Edificio Pijao",
+    "DIRECCION": "AK 11 No. 98-07",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 40,
+    "X": -74.044223752,
+    "Y": 4.681810812
+  },
+  {
+    "NOMBRE": "Bogota Trade Center",
+    "DIRECCION": "CL 97A No. 10-50",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.043986968,
+    "Y": 4.680505956
+  },
+  {
+    "NOMBRE": "MegaTower",
+    "DIRECCION": "AC 100 No 13-21",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 126,
+    "X": -74.0462276,
+    "Y": 4.6837911
+  },
+  {
+    "NOMBRE": "Park 97",
+    "DIRECCION": "KR 14 No 96-55",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 24,
+    "X": -74.048531,
+    "Y": 4.681458
+  },
+  {
+    "NOMBRE": "City Parking CL 95",
+    "DIRECCION": "CL 95 No. 11A -67",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.047211,
+    "Y": 4.679475
+  },
+  {
+    "NOMBRE": "City Parking CL 94",
+    "DIRECCION": "AK 15 No. 94-72",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.049984,
+    "Y": 4.680353
+  },
+  {
+    "NOMBRE": "CL 93B No.15-80",
+    "DIRECCION": "CL 93B No.15-80",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.051722585,
+    "Y": 4.67905183
+  },
+  {
+    "NOMBRE": "Park 90",
+    "DIRECCION": "CL 90 No. 16-05",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 24,
+    "X": -74.054048739,
+    "Y": 4.674845353
+  },
+  {
+    "NOMBRE": "Park 85",
+    "DIRECCION": "CL 85 No. 16-07",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 60,
+    "X": -74.056129001,
+    "Y": 4.669600743
+  },
+  {
+    "NOMBRE": "KR 13 No. 83-43",
+    "DIRECCION": "KR 13 No. 83 43",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.0542819,
+    "Y": 4.6681072
+  },
+  {
+    "NOMBRE": "Crepes & Wafles",
+    "DIRECCION": "CL 74 No. 9-21",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.056148036,
+    "Y": 4.657707268
+  },
+  {
+    "NOMBRE": "Matildelina",
+    "DIRECCION": "CL 81 No. 11-34-44",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 3,
+    "X": -74.053801,
+    "Y": 4.66528
+  },
+  {
+    "NOMBRE": "Hotel Hilton",
+    "DIRECCION": "KR 7 No. 72 - 41",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.055275917,
+    "Y": 4.655550107
+  },
+  {
+    "NOMBRE": "CL 72 No. 5-67",
+    "DIRECCION": "CL 72 No.5-67",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 7,
+    "X": -74.0549741,
+    "Y": 4.6543323
+  },
+  {
+    "NOMBRE": "Claustro de la Ense�anza",
+    "DIRECCION": "CL 70A No. 8 - 04",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 40,
+    "X": -74.05700326,
+    "Y": 4.654828299
+  },
+  {
+    "NOMBRE": "U. Konrad Lorenz",
+    "DIRECCION": "KR 9 No. 62 - 43",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 42,
+    "X": -74.061788321,
+    "Y": 4.648708947
+  },
+  {
+    "NOMBRE": "City Parking Cruz Verde",
+    "DIRECCION": "AC 100 No.13-67",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.046752,
+    "Y": 4.6840487
+  },
+  {
+    "NOMBRE": "La Cancha",
+    "DIRECCION": "CL 93B No.13-55",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 12,
+    "X": -74.0495929,
+    "Y": 4.6778841
+  },
+  {
+    "NOMBRE": "BodyTech Chapinero",
+    "DIRECCION": "KR 7 No. 61- 47",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 12,
+    "X": -74.060495,
+    "Y": 4.646627
+  },
+  {
+    "NOMBRE": "KR 11 No. 93A-72",
+    "DIRECCION": "KR 11 No. 93A 72",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 32,
+    "X": -74.0464701,
+    "Y": 4.6764445
+  },
+  {
+    "NOMBRE": "KR 11A No. 88-49",
+    "DIRECCION": "KR 11A No. 88-49",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 15,
+    "X": -74.0499159,
+    "Y": 4.6717692
+  },
+  {
+    "NOMBRE": "KR 14 No. 86A -11",
+    "DIRECCION": "KR 14 No. 86A 11/15",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 15,
+    "X": -74.054114,
+    "Y": 4.670798
+  },
+  {
+    "NOMBRE": "Body 83",
+    "DIRECCION": "KR 19B No. 83 - 05",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 36,
+    "X": -74.059374,
+    "Y": 4.669894
+  },
+  {
+    "NOMBRE": "Dan Carlton",
+    "DIRECCION": "KR 18 No. 93B-49",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.052948,
+    "Y": 4.680179
+  },
+  {
+    "NOMBRE": "Parque Simon Bolivar",
+    "DIRECCION": "AK 60 No. 53-07",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 70,
+    "X": -74.091925621,
+    "Y": 4.653122692
+  },
+  {
+    "NOMBRE": "Teatro Colsubsidio CL 26",
+    "DIRECCION": "AC 26 No. 25-40",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 30,
+    "X": -74.078022543,
+    "Y": 4.62339378
+  },
+  {
+    "NOMBRE": "Universidad Nacional",
+    "DIRECCION": "AK 30 No. 45-03",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 6,
+    "X": -74.079752874,
+    "Y": 4.635055292
+  },
+  {
+    "NOMBRE": "Los Hornitos Esperanza I",
+    "DIRECCION": "AC 24 No. 43A-90",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 9,
+    "X": -74.094432231,
+    "Y": 4.633338953
+  },
+  {
+    "NOMBRE": "Colsubsidio CL 63",
+    "DIRECCION": "AC 63 No. 24-45",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.073113081,
+    "Y": 4.650374128
+  },
+  {
+    "NOMBRE": "Bazaar Alsacia",
+    "DIRECCION": "Cl 12B No. 71D - 61",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 24,
+    "X": -74.129481,
+    "Y": 4.645173
+  },
+  {
+    "NOMBRE": "BodyTech Kennedy",
+    "DIRECCION": "TV 78J No 41F-05 Sur",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.159597,
+    "Y": 4.618721
+  },
+  {
+    "NOMBRE": "Tienda Jumbo AK 30",
+    "DIRECCION": "AK 30 x AC 19",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.089665316,
+    "Y": 4.618325585
+  },
+  {
+    "NOMBRE": "Autolavado",
+    "DIRECCION": "AC 13 No. 66-70",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 15,
+    "X": -74.117473,
+    "Y": 4.637033
+  },
+  {
+    "NOMBRE": "Clinica Mederi  AK 30",
+    "DIRECCION": "Cl  24 No. 29 - 45",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 38,
+    "X": -74.08228308,
+    "Y": 4.623749779
+  },
+  {
+    "NOMBRE": "Homi",
+    "DIRECCION": "Av. Caracas No. 1-13",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 38,
+    "X": -74.088651,
+    "Y": 4.592316
+  },
+  {
+    "NOMBRE": "Sultana",
+    "DIRECCION": "CL 12 Sur No. 31-37",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 40,
+    "X": -74.108341,
+    "Y": 4.597565
+  },
+  {
+    "NOMBRE": "Gran Centro Automotriz",
+    "DIRECCION": "Autopista Sur No. 60A-99",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 15,
+    "X": -74.147446397,
+    "Y": 4.594742806
+  },
+  {
+    "NOMBRE": "Clinica San Rafael",
+    "DIRECCION": "KR 8 No. 17-45 Sur",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 15,
+    "X": -74.090868831,
+    "Y": 4.57673508
+  },
+  {
+    "NOMBRE": "Candelaria",
+    "DIRECCION": "CL 12C No. 3 -32",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.07045,
+    "Y": 4.598781
+  },
+  {
+    "NOMBRE": "Edificio  Torre 35",
+    "DIRECCION": "KR 13A No. 34-70",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.068614542,
+    "Y": 4.623271226
+  },
+  {
+    "NOMBRE": "Fonade",
+    "DIRECCION": "KR 13 No. 25-31",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.071627,
+    "Y": 4.612559
+  },
+  {
+    "NOMBRE": "Jockey Club",
+    "DIRECCION": "CL 16  No.  04-68",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 2,
+    "X": -74.070929,
+    "Y": 4.601471
+  },
+  {
+    "NOMBRE": "Intercentro",
+    "DIRECCION": "KR 9 No. 23-75",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 18,
+    "X": -74.071016,
+    "Y": 4.6102
+  },
+  {
+    "NOMBRE": "Plaza de Toros La Santamaria",
+    "DIRECCION": "CL 27 No. 5 44",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.067576187,
+    "Y": 4.613697992
+  },
+  {
+    "NOMBRE": "Colsubsidio Nueva Zelanda",
+    "DIRECCION": "AK 45 No. 176 - 31",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.046424627,
+    "Y": 4.757389658
+  },
+  {
+    "NOMBRE": "Mega Outlet",
+    "DIRECCION": "AK 45 No. 197-75",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 100,
+    "X": -74.042628858,
+    "Y": 4.777304387
+  },
+  {
+    "NOMBRE": "BodyTech Colina",
+    "DIRECCION": "CL 138 No. 58-74",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 15,
+    "X": -74.066127,
+    "Y": 4.728943
+  },
+  {
+    "NOMBRE": "Clinica La Colina",
+    "DIRECCION": "AV Boyaca No. 165A-51",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 30,
+    "X": -74.065736235,
+    "Y": 4.749965975
+  },
+  {
+    "NOMBRE": "SIM Autopista",
+    "DIRECCION": "AK 45 No. 106 - 23",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.056322,
+    "Y": 4.694276
+  },
+  {
+    "NOMBRE": "City Parking",
+    "DIRECCION": "CL 128 Bis A No. 58A-66",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.071686726,
+    "Y": 4.715175406
+  },
+  {
+    "NOMBRE": "Jungla Kumba",
+    "DIRECCION": "KR  59D No.131-45",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 6,
+    "X": -74.07226,
+    "Y": 4.723717
+  },
+  {
+    "NOMBRE": "BodyTech Auto Norte",
+    "DIRECCION": "AK 45 No.166-56",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 12,
+    "X": -74.046471857,
+    "Y": 4.748303308
+  },
+  {
+    "NOMBRE": "Nort Point",
+    "DIRECCION": "AK 7 No. 156-80",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 31,
+    "X": -74.023935931,
+    "Y": 4.732837609
+  },
+  {
+    "NOMBRE": "KR 23 No 134A - 21",
+    "DIRECCION": "KR 23 No 134A - 21",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 18,
+    "X": -74.050621899,
+    "Y": 4.720185003
+  },
+  {
+    "NOMBRE": "Drogueria Cruz verde",
+    "DIRECCION": "AK 45 No. 123-14",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.053848474,
+    "Y": 4.704296973
+  },
+  {
+    "NOMBRE": "City Parking CL 122",
+    "DIRECCION": "CL 122 No. 15A -64",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.04472,
+    "Y": 4.70111
+  },
+  {
+    "NOMBRE": "Sandwich Qbano CL 116",
+    "DIRECCION": "AC 116 No.18B-80",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.049498439,
+    "Y": 4.698680763
+  },
+  {
+    "NOMBRE": "Movistar Cl 116",
+    "DIRECCION": "AC 116 No.18-77",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.048489928,
+    "Y": 4.698154143
+  },
+  {
+    "NOMBRE": "City Parking Pepe Sierra",
+    "DIRECCION": "KR 17 No. 116-14",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.046057308,
+    "Y": 4.697823296
+  },
+  {
+    "NOMBRE": "Bufalo Wings 116",
+    "DIRECCION": "KR 17 No. 116-15",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 2,
+    "X": -74.046125,
+    "Y": 4.697837
+  },
+  {
+    "NOMBRE": "Corral Gourmet Pepe Sierra",
+    "DIRECCION": "AC 116 No. 15-65",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 10,
+    "X": -74.044242341,
+    "Y": 4.696465123
+  },
+  {
+    "NOMBRE": "Fundacion Santa Fe",
+    "DIRECCION": "AC 116 No. 7-02",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 52,
+    "X": -74.033783376,
+    "Y": 4.693938499
+  },
+  {
+    "NOMBRE": "Medical Center",
+    "DIRECCION": "CL 119 No. 7-14",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 14,
+    "X": -74.032272723,
+    "Y": 4.69615489
+  },
+  {
+    "NOMBRE": "AK 19 No. 125 17",
+    "DIRECCION": "AK 19 No. 125 17",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 28,
+    "X": -74.04902,
+    "Y": 4.70475
+  },
+  {
+    "NOMBRE": "Casa China",
+    "DIRECCION": "CL 109 No.15-37",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 2,
+    "X": -74.045395036,
+    "Y": 4.692769652
+  },
+  {
+    "NOMBRE": "CL 109 No.17-46",
+    "DIRECCION": "CL 109 No.17-46",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 14,
+    "X": -74.04781547,
+    "Y": 4.693968146
+  },
+  {
+    "NOMBRE": "Frisby",
+    "DIRECCION": "AK 19 No.106A-45",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.050839,
+    "Y": 4.693958
+  },
+  {
+    "NOMBRE": "City Parking Chico 104",
+    "DIRECCION": "AK 19 No. 104 -37",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 8,
+    "X": -74.051655063,
+    "Y": 4.690572154
+  },
+  {
+    "NOMBRE": "Imevi AV 19",
+    "DIRECCION": "AK 19 No.103-72",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 3,
+    "X": -74.051316964,
+    "Y": 4.689704411
+  },
+  {
+    "NOMBRE": "City Parking 123",
+    "DIRECCION": "AK 45 No.123-24",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 7,
+    "X": -74.053834304,
+    "Y": 4.704516861
+  },
+  {
+    "NOMBRE": "City Parking  CL 109",
+    "DIRECCION": "AK 19 No. 109-50",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 4,
+    "X": -74.050398,
+    "Y": 4.695634
+  },
+  {
+    "NOMBRE": "Archies Pepe Sierra",
+    "DIRECCION": "AC 116 No. 17-13",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 18,
+    "X": -74.046298346,
+    "Y": 4.697000942
+  },
+  {
+    "NOMBRE": "BodyTech Plaza",
+    "DIRECCION": "AK 19 No. 102 -31",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 30,
+    "X": -74.051848051,
+    "Y": 4.688049766
+  },
+  {
+    "NOMBRE": "Bogota Busines Center",
+    "DIRECCION": "CL 103 No. 14A -53",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 22,
+    "X": -74.046992,
+    "Y": 4.687669385
+  },
+  {
+    "NOMBRE": "Edificio Boutique",
+    "DIRECCION": "CL 102 No. 14A-70",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 6,
+    "X": -74.047328,
+    "Y": 4.6870836
+  },
+  {
+    "NOMBRE": "City Parking Valmaria",
+    "DIRECCION": "KR 5 No.119-70",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 16,
+    "X": -74.02926,
+    "Y": 4.69566
+  },
+  {
+    "NOMBRE": "Bufallo Wings 134",
+    "DIRECCION": "AK 19 No. 134A-18",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 1,
+    "X": -74.0468148,
+    "Y": 4.7191703
+  },
+  {
+    "NOMBRE": "BodyTech Normandia",
+    "DIRECCION": "AK 72 No. 49-15",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.110333,
+    "Y": 4.668003
+  },
+  {
+    "NOMBRE": "World Business Center",
+    "DIRECCION": "AK 86 No. 51-66",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 20,
+    "X": -74.116803,
+    "Y": 4.680198
+  },
+  {
+    "NOMBRE": "McDonalds Salitre",
+    "DIRECCION": "AV Esperanza x KR 68B",
+    "TIPO": "Parqueadero Bici",
+    "CUPO_BICI": 7,
+    "X": -74.108524472,
+    "Y": 4.652719013
+  }
+]

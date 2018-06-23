@@ -1,255 +1,203 @@
-	/*DataSets URl*/
-	const PARQUES = "dataSets/parques.geojson";
-	const CENTERMAP = {
-	  lat: 4.598889,
-	  lng: -74.080833
-	}; /*Position University*/
-	//var json = require(PARQUES);
+		/*DataSets URl*/
+		const PARQUES = "dataSets/parques.geojson";
+		const PARQUEADEROBICI = "http://datosabiertos.bogota.gov.co/api/action/datastore_search?resource_id=8457f9c1-53c7-40fd-8e38-2712de094de1&q=Parqueadero%20Bici";
 
-	/*CD is a  COMMUNITY DISTRICT /
-	const coordUniversity={lat:40.7291, lng:-73.9965 }; /*Position University*/
-	/*JSON filtered */
-	var infoRows = [];
-	var nbInfo = [];
-	/*Variables for GMaps*/
-	var map;
-	var markers = [];
+		const CENTERMAP = {
+		  lat: 4.598889,
+		  lng: -74.080833
+		}; /*Position University*/
+		//var json = require(PARQUES);
 
-
-
-	var shapePark = [];
-
-
-	class Park {
-	  /*Neighborhood in the 5 district */
-	  constructor(nombre, coorCenter, localidad, coordLimit) {
-	    this._name = nombre;
-	    this._coorCenter = coorCenter; /*Acomodar para si recibe POINT lo organize*/
-	    this._district = localidad;
-	    this._coordLimits = coordLimit;
-	    this._habitable = habitable;
-	    this._color = "#111111"; /*Dejar ramdom dentro del costructor para luego usar*/
-	  }
-	  get name() {
-	    return this._name;
-	  }
-
-	  get coorCenter() {
-	    return this._coorCenter;
-	  }
-
-	  get district() {
-	    return this._district;
-	  }
-
-	  get coordLimits() {
-	    return this._coordLimits;
-	  }
-
-	  get habitable() {
-	    return this._habitable;
-	  }
-
-	}
-	class CommunityDistrict {
-	  /*CommunityDistrict in the 5 district */
-	  constructor(num, coorCenter, coordLimits, habitable) {
-	    this._id = Number(num);
-	    this._coorCenter = coorCenter; /*Acomodar para si recibe POINT lo organize*/
-	    this._coordLimits = coordLimits;
-	    this._habitable = habitable;
-	    this._color = "#111111"; /*Dejar ramdom dentro del costructor para luego usar*/
-	  }
-	  get id() {
-	    return this._id;
-	  }
-
-	  get coorCenter() {
-	    return this._coorCenter;
-	  }
-	  get district() {
-	    return nameDistrict(this._id);
-	  }
-	  get coordLimits() {
-	    return this._coordLimits;
-	  }
-
-	  get habitable() {
-	    return this._habitable;
-	  }
+		/*CD is a  COMMUNITY DISTRICT /
+		const coordUniversity={lat:40.7291, lng:-73.9965 }; /*Position University*/
+		/*JSON filtered */
+		var infoRows = [];
+		var nbInfo = [];
+		/*Variables for GMaps*/
+		var map;
+		var markers = [];
 
 
 
-	}
+		var parques = [];
 
-	function castToCoordinate(coordinates) {
-	  for (var i = 0; i < coordinates.length; i++) {
-	    var point = {
-	      lat: coordinates[1],
-	      lng: coordinates[0]
-	    }
-	  }
-	}
-function pullParques(){
-	fetch("dataSets/parques.geojson")
-	.then(response => response.json())
-	.then(
-		json => {
-			console.log(json.features);
-			var shapePark = [];
-			for (var i = 0; i < json.features.length; i++) {
-				var arra = [];
-					for (var j = 0; j < json.features[i].geometry.coordinates[0][0].length; j++) {
-						var point = new google.maps.LatLng(
-								json.features[i].geometry.coordinates[0][0][j][1],
-								json.features[i].geometry.coordinates[0][0][j][0],
-							);
-								arra.push(point);
+		function mostrarDatos(event) {
+
+
+		  console.log(this.prototype);
+		}
+
+		class Parque {
+		  /*Parques en la ciudad*/
+		  constructor(id, nombre, coorCenter, localidad, coordLimit) {
+		    this._id = id,
+		      this._nombre = nombre;
+		    this._coorCentro = coorCenter; /*Acomodar para si recibe POINT lo organize*/
+		    this._localidad = localidad;
+		    this._limites = coordLimit;
+		    this._color = "#111111"; /*Dejar ramdom dentro del costructor para luego usar*/
+		    this._parqueDibujo
+		  }
+		  get id() {
+		    return this._id;
+		  }
+		  get nombre() {
+		    return this._nombre;
+		  }
+
+		  get coorCentro() {
+		    return this._coorCentro;
+		  }
+
+		  get localidad() {
+		    return this._localidad;
+		  }
+
+		  get limites() {
+		    return this._limites;
+		  }
+
+		  get color() {
+		    return this._color;
+		  }
+
+
+
+		  draw(fill) {
+		    this._parqueDibujo = new google.maps.Polygon({
+		      paths: this._limites,
+		      strokeColor: this._color,
+		      strokeWeight: 2,
+		      fillColor: fill,
+		    });
+		    this._parqueDibujo.setMap(map);
+
+		    this._parqueDibujo.id = this.id;
+
+		    google.maps.event.addListener(this._parqueDibujo, 'click', function(event) {
+		      console.log(parques[this.id]);
+		    });
+
+
+
+		    return this._parqueDibujo;
+		  }
+
+
+		}
+
+		function mostrarDatos(action) {
+		  console.log(action);
+		}
+		function coorGmaps(x,y){
+		  return new google.maps.LatLng(
+				x,
+				y,
+			);
+		}
+		function setMarker(image, coordinates, textHover) {
+		  var marker = new google.maps.Marker({
+		    position: coordinates,
+		    map: map,
+		    /*Mapa donde se colocara el marker*/
+		    icon: image,
+		    title: textHover,
+		    /*Text show in event Hover*/
+		    zIndex: 100
+		  });
+		  marker.setMap(map);
+		  return marker;
+		}
+
+		function pullParques() {
+		  fetch("dataSets/parques.geojson")
+		    .then(response => response.json())
+		    .then(
+		      json => {
+		        for (var i = 0; i < json.features.length; i++) {
+
+		          var limites = [];
+		          for (var j = 0; j < json.features[i].geometry.coordinates[0][0].length; j++) {
+								var point = coorGmaps(
+		              json.features[i].geometry.coordinates[0][0][j][1],
+		              json.features[i].geometry.coordinates[0][0][j][0],
+		            );
+		            limites.push(point);
+		          }
+		          var init = json.features[i].properties.description.indexOf("NOMBRE</td>\n\n<td>");
+		          var end = json.features[i].properties.description.indexOf("</td>\n\n</tr>\n\n<tr bgcolor=");
+
+		          var name = json.features[i].properties.description.substring(end + 46, init + 26);
+		          data = json.features[i].properties.description.split("td>")
+		          park = new Parque(
+		            i,
+		            data[14].substring(0, data[14].length - 2),
+		            "",
+		            "",
+		            limites,
+		          );
+		          park.draw("green");
+		          parques.push(park);
+		        }
+		        console.log(parques);
+		      }
+		    );
+
+		}
+
+		function pullBicis() {
+		  fetch("dataSets/biciParqueaderos.json")
+		    .then(response => response.json())
+		    .then(
+		      json => {
+						var image = {
+							url: 'https://i.imgur.com/QDsm8jB.png',
+							size: new google.maps.Size(45, 45),
+							origin: new google.maps.Point(0, 0),
+							anchor: new google.maps.Point(25, 45)
+						};
+		        console.log(json);
+						for(var i = 0; i < json.length ;i++ ){
+							markerNYU = setMarker(image,
+								coorGmaps(json[i].Y,
+													json[i].X)
+													, 'NYC University');
+
 						}
-						shapePark.push(arra);
-			}
-			console.log(shapePark);
-			for (var i=0 ;  i < shapePark.length ;  i++){
-				var shape = new google.maps.Polygon({
-
-						paths: shapePark[i],
-						strokeColor: "green",
-						strokeWeight: 2,
-						fillColor: "green",
-					});
-					shape.setMap(map);
-
-			}
-
-}
-);
-
-}
-	function getDataShapePark(url) {
-	  var data = $.get(url, () => {})
-	    .done(function() {
-	      var responseJSON = JSON.parse(data.responseText)
-	      for (var i = 0; i < responseJSON.features.length; i++) {
-	        var communityDistrict = new CommunityDistrict(
-	          responseJSON.features[i].properties.BoroCD,
-	          "", [],
-	          "true", /*Tem*/
-	        );
-	        shapePark.push(communityDistrict);
-	        /*Make object with contains of DataSets*/
-	      }
+		      }
+		    );
+		}
 
 
 
-	      for (var i = 0; i < responseJSON.features.length; i++) {
-	        if (responseJSON.features[i].geometry.type == "MultiPolygon") {
-	          for (var j = 0; j < responseJSON.features[i].geometry.coordinates.length; j++) {
-	            for (var g = 0; g < responseJSON.features[i].geometry.coordinates[j].length; g++) {
-	              var arra = [];
-	              for (var k = 0; k < responseJSON.features[i].geometry.coordinates[j][g].length; k++) {
-	                var point = {
-	                  lat: responseJSON.features[i].geometry.coordinates[j][g][k][1],
-	                  lng: responseJSON.features[i].geometry.coordinates[j][g][k][0]
-	                }
-	                arra.push(point);
-	              }
-	              shapePark[i]._coordLimits.push(arra);
-	            }
-	          }
-	        } else {
-	          for (var j = 0; j < responseJSON.features[i].geometry.coordinates.length; j++) {
-	            for (var g = 0; g < responseJSON.features[i].geometry.coordinates[j].length; g++) {
-	              var point = {
-	                lat: responseJSON.features[i].geometry.coordinates[j][g][1],
-	                lng: responseJSON.features[i].geometry.coordinates[j][g][0]
-	              }
-	              shapePark[i]._coordLimits.push(point);
-	            }
-	          }
-	        }
-	      }
 
-	      console.log(shapePark);
-	      drawNB();
+		$("document").ready(function() {
 
-	    })
-	    .fail(function(error) {
-	      /**/
-	      console.error(error);
-	    })
-	}
+		  pullParques();
 
-
-
-	function getDataNeighborhood(URL) {
-	  /*Como parametro podria tener la URL */
-	  var data = $.get(URL, function() {})
-	    .done(function() {
-	      let responseJSON = JSON.parse(data.responseText);
-	      for (var i = 0; i < data.responseJSON.data.length; i++) {
-	        var neighborhood = new Neighborhood(
-	          data.responseJSON.data[i][10],
-	          data.responseJSON.data[i][9],
-	          data.responseJSON.data[i][16],
-	          "", /*Tem*/
-	          "True" /*Tem*/
-	        );
-	        infoRows.push(neighborhood);
-	        /*Make object with contains of DataSets*/
-	      }
-	      console.log(infoRows);
-	      console.log(infoRows.sort(function(name) {
-
-	      }));
-	    })
-	    .fail(function(error) {
-	      console.log(error);
-	    })
-	}
-
-
-	$("document").ready(function() {
-
-pullParques();
-
-	});
+		});
 
 
 
 
 
-	/*Matriz que contiene los marcaadores para posicionar en el mapa*/
-	function initMap() {
-	  // Constructor creates a new map - only center and zoom are required.
-	  map = new google.maps.Map(document.getElementById('map'), {
-	    /*Aqui vive el mapa,se maneja dentro de la clase google.maps*/
-	    center: CENTERMAP,
-	    zoom: 11
-	    /*29 niveles de zoom para iniciar la vista*/
-	  });
+		/*Matriz que contiene los marcaadores para posicionar en el mapa*/
+		function initMap() {
+		  // Constructor creates a new map - only center and zoom are required.
+		  map = new google.maps.Map(document.getElementById('map'), {
+		    /*Aqui vive el mapa,se maneja dentro de la clase google.maps*/
+		    center: CENTERMAP,
+		    zoom: 11
+		    /*29 niveles de zoom para iniciar la vista*/
+		  });
 
 
-	  var image = {
-	    url: 'https://i.imgur.com/QDsm8jB.png',
-	    size: new google.maps.Size(45, 45),
-	    origin: new google.maps.Point(0, 0),
-	    anchor: new google.maps.Point(25, 45)
-	  };
-	  setMarker(image, CENTERMAP, 'NYC University');
+		  var image = {
+		    url: 'https://i.imgur.com/QDsm8jB.png',
+		    size: new google.maps.Size(45, 45),
+		    origin: new google.maps.Point(0, 0),
+		    anchor: new google.maps.Point(25, 45)
+		  };
+		  setMarker(image, CENTERMAP, 'NYC University');
 
-	}
-
-
-	/*Functions for Google Maps*/
-
-	function setMarker(image, coordinates, textHover) {
-	  var marker = new google.maps.Marker({
-	    position: coordinates,
-	    map: map,
-	    /*Mapa donde se colocara el marker*/
-	    icon: image,
-	    title: textHover,
-	    /*Text show in event Hover*/
-	    zIndex: 100
-	  });
-	}
+		}
