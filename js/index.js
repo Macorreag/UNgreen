@@ -36,7 +36,8 @@
 		    this._localidad = localidad;
 		    this._limites = coordLimit;
 		    this._color = "#111111"; /*Dejar ramdom dentro del costructor para luego usar*/
-		    this._parqueDibujo
+		    this._parqueDibujo,
+				this._inventario = []
 		  }
 		  get id() {
 		    return this._id;
@@ -61,7 +62,9 @@
 		    return this._color;
 		  }
 
-
+			get inventario(){
+				return this._inventario	;
+			}
 
 		  draw(fill) {
 		    this._parqueDibujo = new google.maps.Polygon({
@@ -168,7 +171,30 @@
 		    );
 		}
 
+		function pullInventario(){
+			fetch("dataSets/inventario.json")
+				.then(response => response.json())
+				.then(
+					json => {
 
+						for (var i =0 ; i <json.length;i++){
+
+
+var found = parques.find(function(element) {
+  return element.nombre == json[i].NOMBRE;
+});
+
+if (found != null){
+		found.inventario.push(json[i]);
+		console.log(found);
+}
+
+
+
+						}
+					}
+				);
+		}
 
 
 		$("document").ready(function() {
