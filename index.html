@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!--sweet alert Para alert bonitas-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--Se llama Jquery -->
+
+
+  <!--Se puede definir los tipos de estilos para cada pantalla especifica media="screen and (device-height: 600px)" -->
+  <!--llamado a bootstrap 4 version min -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link rel="StyleSheet" href="css/style.css" type="text/css" >
+
+
+
+  <title>ASINY</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+
+
+
+  <!--Espacido en bootstrap offset-md-4 deja el espaciado en el container respecto a la grilla -->
+  <!--col-sm-6 Subdivicion NESTING dentro de un container de 12-->
+
+  <div id="map" class="container-fluid position-absolute "></div>
+  <!--Si se quita el overlay se acomoda para telefonos-->
+  <div class="container-fluid">
+    <div class="row justify-content-between">
+      <div class="col-3 panel">
+          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
+        <div class="col-md-10">
+          <div class="  margin-top-sm">
+            <div class="title"><strong>Ranking</strong></div>
+            <div class="table-responsive">
+              <table id="city"class="table">
+                <thead>
+                  <tr>
+                    <th>Position</th>
+                    <th>District</th>
+                    <th>BoroCD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Example split danger button -->
+<div class="">
+  </div>
+
+
+
+        <div class="col-3  panel">
+          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
+          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+      <script type="text/javascript" src="js/index.js"></script>
+      <!--Cargar la API de google maps de forma Asincrona*/-->
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWkKjMTwqGaE9ZeL8bzwlH6Y4I0ao2yjY&v=3&callback=initMap">
+      </script>
+      <!--Cargamos de ultimas el javascript para no interrumpir la carga de la pagina-->
+
+    </body>
+
+    </html>

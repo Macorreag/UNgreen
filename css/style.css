@@ -1,0 +1,20 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.panel{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7 ) , rgba(19, 47, 196, 0.7));
+    color: rgb(255, 255, 255);
+    /*overflow: scroll;*/
+}
+.dropdown{
+  display: inline;
+
+}
+.table{
+  overflow: scroll;
+}
