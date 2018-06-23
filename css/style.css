@@ -7,9 +7,10 @@
     padding: 0;
 }
 .panel{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7 ) , rgba(19, 47, 196, 0.7));
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7 ) , rgba(155, 207, 99, 0.7));
     color: rgb(255, 255, 255);
-    /*overflow: scroll;*/
+    overflow: scroll;
 }
 .dropdown{
   display: inline;
@@ -17,4 +18,8 @@
 }
 .table{
   overflow: scroll;
+}
+.btn-primary{
+  background-color: rgb(81, 177, 72);
+  border-color: rgb(81, 177, 120  );
 }

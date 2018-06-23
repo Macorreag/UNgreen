@@ -78,7 +78,11 @@
 		    this._parqueDibujo.id = this.id;
 
 		    google.maps.event.addListener(this._parqueDibujo, 'click', function(event) {
-		      console.log(parques[this.id]);
+
+
+					$(Nombre).html(parques[this.id].nombre);
+						$("#inventario").html(parques[this.id].inventario);
+		      console.log(parques[this.id].inventario);
 		    });
 
 
@@ -113,6 +117,7 @@
 		}
 
 		function pullParques() {
+			return new Promise(resolve => {
 		  fetch("dataSets/parques.geojson")
 		    .then(response => response.json())
 		    .then(
@@ -145,33 +150,40 @@
 		        console.log(parques);
 		      }
 		    );
+				resolve(markers);
+				})
 
 		}
 
-	async	function pullBicis() {
+		function pullBicis() {
+			return new Promise(resolve => {
+		var markers = [];
 		  fetch("dataSets/biciParqueaderos.json")
 		    .then(response => response.json())
 		    .then(
 		      json => {
 						var image = {
-								url: 'https://i.imgur.com/QDsm8jB.png',
+								url: 'https://i.imgur.com/XwGlYlo.png',
 							size: new google.maps.Size(45, 45),
 							origin: new google.maps.Point(0, 0),
 							anchor: new google.maps.Point(25, 45)
 						};
 		        console.log(json);
 						for(var i = 0; i < json.length ;i++ ){
-							markerNYU = setMarker(image,
+							var marker = setMarker(image,
 								coorGmaps(json[i].Y,
 													json[i].X)
 													, 'NYC University');
 
 						}
+						markers.push(marker);
 		      }
 		    );
+			resolve(markers);
+				})
 		}
 		$('#chk1').change(function() {
-		  var value = alert($(this).prop('checked'));
+		  var value = $(this).prop('checked');
 			if(value){
 				/*Mostrar PARQUEADEROBICI*/
 				pullBicis();
@@ -179,7 +191,6 @@
 				/*Esconder PARQUEADEROBICI*/
 
 			}
-			alert(this);
 		})
 		function pullInventario(){
 			fetch("dataSets/inventario.json")
@@ -207,9 +218,9 @@ if (found != null){
 		}
 
 
-		$("document").ready(function() {
+		$("document").ready(async function() {
 
-		  pullParques();
+		   pullParques();
 
 		});
 
@@ -223,17 +234,7 @@ if (found != null){
 		  map = new google.maps.Map(document.getElementById('map'), {
 		    /*Aqui vive el mapa,se maneja dentro de la clase google.maps*/
 		    center: CENTERMAP,
-		    zoom: 11
+		    zoom: 13
 		    /*29 niveles de zoom para iniciar la vista*/
 		  });
-
-
-		  var image = {
-		    url: 'https://i.imgur.com/QDsm8jB.png',
-		    size: new google.maps.Size(45, 45),
-		    origin: new google.maps.Point(0, 0),
-		    anchor: new google.maps.Point(25, 45)
-		  };
-		  setMarker(image, CENTERMAP, 'NYC University');
-
 		}
