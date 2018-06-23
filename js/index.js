@@ -79,10 +79,11 @@
 
 		    google.maps.event.addListener(this._parqueDibujo, 'click', function(event) {
 
+//						$("#table").bootstrapTable('removeAll');
 
 						$(Nombre).html(parques[this.id].nombre);
 						$("#inventario").html(parques[this.id].inventario[0]);
-
+						updateTable(parques[this.id].inventario);
 		      console.log(parques[this.id].inventario);
 		    });
 
@@ -103,6 +104,40 @@
 				y,
 			);
 		}
+		function updateTable(inventario) {
+  $('#table').bootstrapTable({
+    data: inventario,
+    showExport: true,
+    exportOptions: {
+      fileName: 'AsinyTableFilter'
+    },
+    onClickRow: function(row, $element) {
+
+      if (typeof(shapeActive) == "object" && typeof(neigMarkActive) == "object") {
+        shapeActive.setVisible(false);
+        for (var i = 0; i < neigMarkActive.length; i++) {
+          neigMarkActive[i].setVisible(false);
+        }
+      };
+      $element.css({
+        backgroundColor: row.color
+      });
+      shapeActive = row.draw(row.color);
+      neigMarkActive = row.drawNB();
+      $('#nameBoro').html(row.borough);
+      $('#numberCD').html("Community District : " + row.numberCD);
+      drawChart(row.incomeUnits);
+      drawPie(row.bedroomUnits);
+      directionsRenderer.setMap(null);
+      map.setCenter(row.neighborhoods[0].coorCenter);
+      map.setZoom(13);
+    },
+  });
+  /*Update text in button to export table*/
+  $('.export .caret').html("Export To");
+  $('.keep-open .caret').html("Columns");
+
+}
 		function setMarker(image, coordinates, textHover) {
 		  var marker = new google.maps.Marker({
 		    position: coordinates,
@@ -116,7 +151,13 @@
 		  marker.setMap(map);
 		  return marker;
 		}
-
+		function detailFormatter(index, row) {
+			 var html = [];
+			 $.each(row, function (key, value) {
+					 html.push('<p><b>' + key + ':</b> ' + value + '</p>');
+			 });
+			 return html.join('');
+	 }
 		function pullParques() {
 			return new Promise(resolve => {
 		  fetch("dataSets/parques.geojson")

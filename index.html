@@ -14,17 +14,30 @@
 
 
 
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://www.gnu.org/favicon.ico" />
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<link
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+<script  src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+<!--PAsar a CVS-->
+<script  src="https://d3js.org/d3.v5.min.js"></script>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <link rel="StyleSheet" href="css/style.css" type="text/css" >
+<script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
 
+<!-- Latest compiled and minified JavaScript -->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
 
+<link rel="StyleSheet" href="css/style.css"  >
+
+<!-- Latest compiled and minified Locales -->
+
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-es-ES.js"></script>
+<!-- Bootstrap Dependence to Export Table -->
+<script  src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/export/bootstrap-table-export.js"></script>
+<!-- JQueryPlugin to ExportTable -->
+<script  src="https://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
 
   <title>UNGreen</title>
   <style>
@@ -50,9 +63,7 @@
 <button  class="btn btn-primary btn-lg btn-block" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Perfil De Usuario
 </button>
-<div class="checkbox">
-  <label><input type="checkbox" value="">Option 1</label>
-</div>
+
 <div class="checkbox">
   <label><input id="chk1" type="checkbox" value="">CicloParqueaderos</label>
 </div>
@@ -69,13 +80,27 @@ Perfil De Usuario
   <p id="#inventario">
 
   </p>
+  <table id="table"
 
-          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
-          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
-          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
-          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
-          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
-          <p>Mira, se me ocurre que podrías hacerlo de esta manera: dentro de cada una de tus columnas metes una fila (row) y le dices que ocupen todo el espacio (col-md-12) y dentro de la fila donde quieres el espacio le añades un padding con la cantidad de separación que quieres, esto último te sugiero hacerlo mediante un media query en tu hoja de estilos ya que no vas a poder controlarlo mediante alguna clase especial para que se acomode todo correctamente en dispositivos móviles, prueba este código y te va quedar mas claro:</p>
+      class="table table-sm"
+      data-click-to-select="true"
+      data-classes="table table-no-bordered"
+      data-show-columns="true"
+      data-detail-view="true"
+      data-detail-formatter="detailFormatter"
+      data-height="460">
+      <thead>
+        <tr>
+          <th data-field="LOCALIDAD">CD N°</th>
+          <th data-field="DOTACIÓN">Disponible Houses</th>
+          <th data-field="EQUIPAMIENTO">Equipamiento</th>
+
+        </tr>
+
+      </thead>
+    </table>
+
+
         <div class="col-md-10">
 
 
