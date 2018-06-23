@@ -1,7 +1,7 @@
 		/*DataSets URl*/
 		const PARQUES = "dataSets/parques.geojson";
 		const PARQUEADEROBICI = "http://datosabiertos.bogota.gov.co/api/action/datastore_search?resource_id=8457f9c1-53c7-40fd-8e38-2712de094de1&q=Parqueadero%20Bici";
-
+		const CAI = "https://www.datos.gov.co/api/views/7pce-3uf3/rows.json?accessType=DOWNLOAD";
 		const CENTERMAP = {
 		  lat: 4.598889,
 		  lng: -74.080833
@@ -148,13 +148,13 @@
 
 		}
 
-		function pullBicis() {
+	async	function pullBicis() {
 		  fetch("dataSets/biciParqueaderos.json")
 		    .then(response => response.json())
 		    .then(
 		      json => {
 						var image = {
-							url: 'https://i.imgur.com/QDsm8jB.png',
+								url: 'https://i.imgur.com/QDsm8jB.png',
 							size: new google.maps.Size(45, 45),
 							origin: new google.maps.Point(0, 0),
 							anchor: new google.maps.Point(25, 45)
@@ -170,7 +170,17 @@
 		      }
 		    );
 		}
+		$('#chk1').change(function() {
+		  var value = alert($(this).prop('checked'));
+			if(value){
+				/*Mostrar PARQUEADEROBICI*/
+				pullBicis();
+			}else{
+				/*Esconder PARQUEADEROBICI*/
 
+			}
+			alert(this);
+		})
 		function pullInventario(){
 			fetch("dataSets/inventario.json")
 				.then(response => response.json())
