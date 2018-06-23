@@ -3,8 +3,8 @@
 		const PARQUEADEROBICI = "http://datosabiertos.bogota.gov.co/api/action/datastore_search?resource_id=8457f9c1-53c7-40fd-8e38-2712de094de1&q=Parqueadero%20Bici";
 		const CAI = "https://www.datos.gov.co/api/views/7pce-3uf3/rows.json?accessType=DOWNLOAD";
 		const CENTERMAP = {
-		  lat: 4.598889,
-		  lng: -74.080833
+		  lat: 4.659237,
+		  lng: -74.092898
 		}; /*Position University*/
 		//var json = require(PARQUES);
 
@@ -80,8 +80,9 @@
 		    google.maps.event.addListener(this._parqueDibujo, 'click', function(event) {
 
 
-					$(Nombre).html(parques[this.id].nombre);
-						$("#inventario").html(parques[this.id].inventario);
+						$(Nombre).html(parques[this.id].nombre);
+						$("#inventario").html(parques[this.id].inventario[0]);
+
 		      console.log(parques[this.id].inventario);
 		    });
 
@@ -220,7 +221,10 @@ if (found != null){
 
 		$("document").ready(async function() {
 
-		   pullParques();
+		   await pullParques();
+			 await pullInventario();
+
+
 
 		});
 

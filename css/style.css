@@ -8,7 +8,7 @@
 }
 .panel{
     height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7 ) , rgba(155, 207, 99, 0.7));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9 ) , rgba(155, 207, 99, 0.9));
     color: rgb(255, 255, 255);
     overflow: scroll;
 }
