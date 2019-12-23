@@ -15,29 +15,29 @@
 
 
   <link rel="shortcut icon" href="https://www.gnu.org/favicon.ico" />
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<link
-href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
-<script  src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
-<!--PAsar a CVS-->
-<script  src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!--PAsar a CVS-->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 
-<script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<!-- Latest compiled and minified CSS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
 
-<!-- Latest compiled and minified JavaScript -->
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
 
-<link rel="StyleSheet" href="css/style.css"  >
+  <link rel="StyleSheet" href="css/style.css">
 
-<!-- Latest compiled and minified Locales -->
+  <!-- Latest compiled and minified Locales -->
 
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-es-ES.js"></script>
-<!-- Bootstrap Dependence to Export Table -->
-<script  src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/export/bootstrap-table-export.js"></script>
-<!-- JQueryPlugin to ExportTable -->
-<script  src="https://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-es-ES.js"></script>
+  <!-- Bootstrap Dependence to Export Table -->
+  <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/export/bootstrap-table-export.js">
+  </script>
+  <!-- JQueryPlugin to ExportTable -->
+  <script src="https://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
 
   <title>UNGreen</title>
   <style>
@@ -58,49 +58,43 @@ href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
   <div class="container-fluid">
     <div class="row justify-content-between">
       <div class="col-3 panel">
-<ul class="navbar-nav mr-auto">
-<li class="nav-item dropdown">
-<button  class="btn btn-primary btn-lg btn-block" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Perfil De Usuario
-</button>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <button class="btn btn-primary btn-lg btn-block" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Perfil De Usuario
+            </button>
 
-<div class="checkbox">
-  <label><input id="chk1" type="checkbox" value="">CicloParqueaderos</label>
-</div>
-<h4 id="Nombre">Parque</h4>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" >Ciclista</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" >Docente</a>
-</div>
-</li>
-</ul>
+            <div class="checkbox">
+              <label><input id="chk1" type="checkbox" value="">CicloParqueaderos</label>
+            </div>
+            <h4 id="Nombre">Parque</h4>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item">Ciclista</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item">Docente</a>
+            </div>
+          </li>
+        </ul>
 
 
-  <p id="#inventario">
+        <p id="#inventario">
 
-  </p>
-  <table id="table"
+        </p>
+        <table id="table" class="table table-sm" data-click-to-select="true" data-classes="table table-no-bordered"
+          data-show-columns="true" data-detail-view="true" data-detail-formatter="detailFormatter" data-height="460">
+          <thead>
+            <tr>
+              <th data-field="LOCALIDAD">Localidad</th>
+              <th data-field="DOTACIÓN">Dotacion</th>
+              <th data-field="EQUIPAMIENTO">Equipamiento</th>
+              <th data-field="MATERIAL">Material</th>
+              <th data-field="CERRAMIENTO">Cerramiento</th>
 
-      class="table table-sm"
-      data-click-to-select="true"
-      data-classes="table table-no-bordered"
-      data-show-columns="true"
-      data-detail-view="true"
-      data-detail-formatter="detailFormatter"
-      data-height="460">
-      <thead>
-        <tr>
-          <th data-field="LOCALIDAD">Localidad</th>
-          <th data-field="DOTACIÓN">Dotacion</th>
-          <th data-field="EQUIPAMIENTO">Equipamiento</th>
-          <th data-field="MATERIAL">Material</th>
-          <th data-field="CERRAMIENTO">Cerramiento</th>
+            </tr>
 
-        </tr>
-
-      </thead>
-    </table>
+          </thead>
+        </table>
 
 
         <div class="col-md-10">
@@ -117,17 +111,20 @@ Perfil De Usuario
 
 
     </div>
-    </div>
+  </div>
 
 
 
 
-      <script type="text/javascript" src="js/index.js"></script>
-      <!--Cargar la API de google maps de forma Asincrona*/-->
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWkKjMTwqGaE9ZeL8bzwlH6Y4I0ao2yjY&v=3&callback=initMap">
-      </script>
-      <!--Cargamos de ultimas el javascript para no interrumpir la carga de la pagina-->
+  <script type="text/javascript" src="js/bikeManage.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <!-- Controlador Servicios Bicicleta -->
+  <!--Cargar la API de google maps de forma Asincrona*/-->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWkKjMTwqGaE9ZeL8bzwlH6Y4I0ao2yjY&v=3&callback=initMap">
+  </script>
+  <!--Cargamos de ultimas el javascript para no interrumpir la carga de la pagina-->
 
-    </body>
+</body>
 
-    </html>
+</html>

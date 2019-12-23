@@ -2,14 +2,19 @@
 		const PARQUES = "dataSets/parques.geojson";
 		const PARQUEADEROBICI = "http://datosabiertos.bogota.gov.co/api/action/datastore_search?resource_id=8457f9c1-53c7-40fd-8e38-2712de094de1&q=Parqueadero%20Bici";
 		const CAI = "https://www.datos.gov.co/api/views/7pce-3uf3/rows.json?accessType=DOWNLOAD";
+const BICIPARK = "https://datosabiertos.bogota.gov.co/dataset/287ab07c-b22b-4851-ab41-233708db0024/resource/1bcd9f68-0ac5-480a-a671-9bee0212b572/download/cicloparqueaderos_certificad.geojson";
+
+
+
+
 		const CENTERMAP = {
 		  lat: 4.659237,
 		  lng: -74.092898
-		}; /*Position University*/
+};
+
+
 		//var json = require(PARQUES);
 
-		/*CD is a  COMMUNITY DISTRICT /
-		const coordUniversity={lat:40.7291, lng:-73.9965 }; /*Position University*/
 		/*JSON filtered */
 		var infoRows = [];
 		var nbInfo = [];
@@ -21,16 +26,11 @@
 
 		var parques = [];
 
-		function mostrarDatos(event) {
-
-
-		  console.log(this.prototype);
-		}
 
 		class Parque {
 		  /*Parques en la ciudad*/
-		  constructor(id, nombre, coorCenter, localidad, coordLimit) {
-		    this._id = id,
+	constructor(id, nombre, coorCenter, localidad, coordLimit){
+		this._id = id;
 		      this._nombre = nombre;
 		    this._coorCentro = coorCenter; /*Acomodar para si recibe POINT lo organize*/
 		    this._localidad = localidad;
@@ -62,8 +62,8 @@
 		    return this._color;
 		  }
 
-			get inventario(){
-				return this._inventario	;
+	get inventario() {
+		return this._inventario;
 			}
 
 		  draw(fill) {
@@ -77,7 +77,7 @@
 
 		    this._parqueDibujo.id = this.id;
 
-		    google.maps.event.addListener(this._parqueDibujo, 'click', function(event) {
+		google.maps.event.addListener(this._parqueDibujo, 'click', function (event) {
 
 //						$("#table").bootstrapTable('removeAll');
 
@@ -95,15 +95,15 @@
 
 		}
 
-		function mostrarDatos(action) {
-		  console.log(action);
-		}
-		function coorGmaps(x,y){
+
+
+function coorGmaps(x, y) {
 		  return new google.maps.LatLng(
 				x,
 				y,
 			);
 		}
+
 		function updateTable(inventario) {
   $('#table').bootstrapTable({
     data: inventario,
@@ -111,9 +111,9 @@
     exportOptions: {
       fileName: 'AsinyTableFilter'
     },
-    onClickRow: function(row, $element) {
+		onClickRow: function (row, $element) {
 
-      if (typeof(shapeActive) == "object" && typeof(neigMarkActive) == "object") {
+			if (typeof (shapeActive) == "object" && typeof (neigMarkActive) == "object") {
         shapeActive.setVisible(false);
         for (var i = 0; i < neigMarkActive.length; i++) {
           neigMarkActive[i].setVisible(false);
@@ -138,6 +138,7 @@
   $('.keep-open .caret').html("Columns");
 
 }
+
 		function setMarker(image, coordinates, textHover) {
 		  var marker = new google.maps.Marker({
 		    position: coordinates,
@@ -151,6 +152,7 @@
 		  marker.setMap(map);
 		  return marker;
 		}
+
 		function detailFormatter(index, row) {
 			 var html = [];
 			 $.each(row, function (key, value) {
@@ -158,9 +160,10 @@
 			 });
 			 return html.join('');
 	 }
+
 		function pullParques() {
 			return new Promise(resolve => {
-		  fetch("dataSets/parques.geojson")
+		fetch(PARQUES)
 		    .then(response => response.json())
 		    .then(
 		      json => {
@@ -211,11 +214,10 @@
 							anchor: new google.maps.Point(25, 45)
 						};
 		        console.log(json);
-						for(var i = 0; i < json.length ;i++ ){
+					for (var i = 0; i < json.length; i++) {
 							var marker = setMarker(image,
 								coorGmaps(json[i].Y,
-													json[i].X)
-													, 'NYC University');
+								json[i].X), 'NYC University');
 
 						}
 						markers.push(marker);
@@ -224,30 +226,31 @@
 			resolve(markers);
 				})
 		}
-		$('#chk1').change(function() {
+$('#chk1').change(function () {
 		  var value = $(this).prop('checked');
-			if(value){
+	if (value) {
 				/*Mostrar PARQUEADEROBICI*/
 				pullBicis();
-			}else{
+	} else {
 				/*Esconder PARQUEADEROBICI*/
 
 			}
 		})
-		function pullInventario(){
+
+function pullInventario() {
 			fetch("dataSets/inventario.json")
 				.then(response => response.json())
 				.then(
 					json => {
 
-						for (var i =0 ; i <json.length;i++){
+				for (var i = 0; i < json.length; i++) {
 
 
-var found = parques.find(function(element) {
+					var found = parques.find(function (element) {
   return element.nombre == json[i].NOMBRE;
 });
 
-if (found != null){
+					if (found != null) {
 		found.inventario.push(json[i]);
 		console.log(found);
 }
@@ -260,10 +263,11 @@ if (found != null){
 		}
 
 
-		$("document").ready(async function() {
+$("document").ready(async function () {
 
 		   await pullParques();
 			 await pullInventario();
+	await pullBikePath();
 
 
 
@@ -282,4 +286,5 @@ if (found != null){
 		    zoom: 13
 		    /*29 niveles de zoom para iniciar la vista*/
 		  });
+
 		}
