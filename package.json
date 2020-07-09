@@ -4,6 +4,7 @@
   "description": "App for travel in Bogota",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Macorreag/UNgreen/issues"
   },
-  "homepage": "https://github.com/Macorreag/UNgreen#readme"
+  "homepage": "https://github.com/Macorreag/UNgreen#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
