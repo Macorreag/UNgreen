@@ -1,0 +1,22 @@
+{
+  "name": "ungreen",
+  "version": "0.0.2",
+  "description": "App for travel in Bogota",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macorreag/UNgreen.git"
+  },
+  "keywords": [
+    "bike"
+  ],
+  "author": "macorreag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macorreag/UNgreen/issues"
+  },
+  "homepage": "https://github.com/Macorreag/UNgreen#readme"
+}
