@@ -8,7 +8,7 @@ const BICIPARK =
 	"https://datosabiertos.bogota.gov.co/dataset/287ab07c-b22b-4851-ab41-233708db0024/resource/1bcd9f68-0ac5-480a-a671-9bee0212b572/download/cicloparqueaderos_certificad.geojson";
 
 
-const REPORTESBICI = "https://script.google.com/macros/s/AKfycbzsm2ZGUz8bqXkdHCn2AqP9dVzHPrkealIYMhTeJpgOhqsY0B2pBDdBRRLaFEte3aQ5xA/exec";
+const REPORTESBICI = "https://datosabiertos.bogota.gov.co/dataset/cuadrantes-de-policia-bogota-d-c/resource/f0ad2ee3-bfd0-4825-9b31-bff9041649fa";
 
 
 const CENTERMAP = {
